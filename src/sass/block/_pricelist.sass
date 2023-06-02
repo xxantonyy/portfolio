@@ -1,0 +1,52 @@
+.pricelist
+   padding-top: 60px
+   &__header
+      text-align: center
+      position: relative
+      text-align: center
+      @include before_circle
+      &:before
+         top: -6px
+         left: 50%
+         transform: translateX(-50%)
+   &__subtitle
+      text-align: center
+   &__wrapper
+      padding: 0 50px 0 50px
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+   &__item
+      position: relative
+      height: 44px
+      width: 366px
+      margin-top: 15px
+   &__topick
+      font-weight: 700
+      font-size: 14px
+      line-height: 21px
+      position: absolute
+      top: 0
+      left: 25px
+      @include before_circle2
+      &::before
+         height: 15px
+         width: 15px
+         top: 3px
+
+   &__price
+      font-weight: 700
+      font-size: 14px
+      line-height: 21px
+      position: absolute
+      top: 0
+      right: 0
+   &__descr
+      font-weight: 500
+      font-size: 12px
+      line-height: 18px
+      position: absolute
+      bottom: 0
+      left: 25px
+   .devider
+      margin: 25px auto 30px auto

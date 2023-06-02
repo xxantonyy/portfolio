@@ -1,0 +1,235 @@
+@media (max-width: 1200px)
+   .container
+      max-width:940px
+   .sidepanel
+      display: none
+   .about
+      .container
+         grid-template-columns: 400px 440px
+         column-gap: 50px
+         margin: 0 50px
+      &__working_block 
+         span
+            font-weight: 700
+            font-size: 13px
+            line-height: 24px
+      &__working 
+         column-gap: 25px
+         row-gap: 0px
+   .resume__wrapper
+      grid-template-columns: repeat(2,370px)
+      column-gap: 48px  
+   .skills
+      &__wrapper 
+         grid-template-columns: repeat(4, 230px)
+      &__skills__img-name
+         grid-template-columns: repeat(3,1fr)
+      &__subtitle
+         font-size: 36px
+         line-height: 40px
+   .portfolio
+      &__wrapper
+         justify-content: center
+         .vertical
+            grid-row: unset
+            grid-column: unset
+         .horizontal
+            grid-row: unset
+            grid-column: unset
+   .contacts
+      &__wrapper
+         grid-template-columns: 300px 520px
+   .row1
+      column-gap: 10px
+
+
+@media (max-width: 992px)
+   .container
+      max-width:720px
+   #typed
+      font-size: 36px
+      line-height: 40px
+      width: 400px
+   .about
+      &__working
+         grid-template-columns: 320px
+      &_h2
+         font-size: 30px
+      .container
+         grid-template-columns: 300px 360px
+         column-gap: 55px
+         margin: 45px
+   .resume__wrapper
+      grid-template-columns: repeat(2,300px)
+      column-gap: 0 
+      justify-content: center
+   .resume__wrapper.devider
+      margin: 0
+   .skills
+      &__wrapper 
+         grid-template-columns: repeat(2, 250px)
+         grid-template-rows: repeat(2, 260px)
+      &__skills__img-name
+         grid-template-columns: repeat(2,250px)
+         grid-template-rows: repeat(3,70px)
+      &__subtitle
+         font-size: 36px
+         line-height: 40px
+   .pricelist__wrapper
+      justify-content: center
+
+   .contacts
+      &__photo
+         display: none
+      &__wrapper
+         margin: 0
+         grid-template-columns: 280px
+      &__input
+         gap: 10px
+
+
+
+
+
+@media (max-width: 768px)
+   .container
+      max-width:540px
+      padding: 0
+   #typed
+      font-size: 26px
+      line-height: 30px
+      width: 300px
+      height: 55px
+   .about .container
+       grid-template-columns: 1fr
+       grid-template-rows: 340px
+       row-gap: 25px
+       padding-left: 15%
+       padding-right: 0
+       width: 500px
+       padding-top: 60px
+   .about__working
+      align-items: center
+      justify-content: center
+      
+   .about
+      &__working
+         grid-template-columns: 400px
+      #img
+         height: 400px
+         width: 300px   
+   .about .devider
+      background-color:$main-color
+      height: 2px
+      width: 70px
+   .promo
+      background: url('../img/main_bg3.jpg') no-repeat 66%/cover
+   .resume__wrapper
+      grid-template-columns: 300px
+      row-gap: 30px
+
+   .contacts
+      &__descr
+         width: 280px
+      &__wrapper
+         width: 280px
+         grid-template-columns: 400px 0
+         justify-items: center
+         margin-left: 10px
+      &__form
+         grid-template-rows: 45px 45px 190px
+      &__subtitle
+         font-size: 36px
+         line-height: 40px
+   .row1
+      width: 280px
+      grid-template-columns: auto-fit
+   .row2
+      grid-row: 2/3
+   .row3
+      width: 280px
+   .row4
+      width: 280px
+      grid-template-columns: 300px
+      grid-template-rows: 40px 40px
+      gap: 20px
+      .btn_up
+         text-align: center
+         grid-row: 1/2
+
+@media (max-width: 576px)
+   .container
+      max-width: 320px
+   .hamburger
+      right: 20px
+   .menu
+      &__block 
+         width: 250px
+      &__list 
+         padding-left: 20px
+   .promo
+      background: url('../img/main_bg3.jpg') no-repeat 65%/cover
+      &__wrapper
+         padding-left: 10px
+      #typed
+         font-size: 23px
+   .portfolio__wrapper
+      grid-template-columns: repeat(auto-fit,150px)
+      grid-auto-rows: 150px
+   .about .container 
+      grid-template-columns: 1fr
+      grid-template-rows: 300px auto auto
+      justify-content: center
+   .about
+      &__working
+         grid-template-columns: 240px
+      #img  
+         height: 340px
+   .about .container
+       width: 300px
+       margin-left: 10px
+       padding-left: 0
+   .resume
+      padding-top: 60px
+   .skills
+      &__wrapper 
+         grid-template-columns: repeat(1, 250px)
+         grid-template-rows: repeat(3, 260px)
+      &__skills__img-name
+         grid-template-columns: repeat(1,250px)
+         grid-template-rows: repeat(6,70px)
+      &__subtitle
+         font-size: 36px
+         line-height: 40px
+      .twice
+         .skills__img-name
+            margin-top: 15px
+   .pricelist__item
+      height: 60px
+   .pricelist__topick 
+      left: -30px
+   .pricelist__descr
+      left: -30px
+   .pricelist__price 
+      right: -40px
+   .pricelist__topick:before
+      left: -17px
+   
+   .contacts
+      padding-top: 40px
+      &__form
+         grid-template-columns: 300px
+      &__wrapper
+         width: 280px
+         justify-content: center
+      &__input
+         width: 280px
+   .btn_up
+      margin-left: 50px
+      width: 180px
+   .row1
+      width: 280px
+   .row4 
+      width: 280px
+   .btn
+      margin-left:34px

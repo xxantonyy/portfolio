@@ -1,0 +1,47 @@
+.promo   
+   min-height: 100vh
+   position: relative
+   background: url('../img/main_bg3.jpg') no-repeat 50%/cover
+   padding-top: 205px
+   &__title
+      width: 535px
+      margin-top: 10px
+      height: 120px
+   &__wrapper
+      margin-left: 1px
+   &__btns
+      margin-top: 25px
+      display: flex
+      width: 300px
+      align-items: center
+      font-weight: 700
+      font-size: 14px
+      line-height: 21px
+   &_link
+      font-weight: bold
+      color: black
+      text-decoration: none
+      text-align: center
+      &:hover
+         color: black
+   &_link_nobtn
+     padding: 12px 25px
+     height: 45px
+     width: 150px
+   &_title_name
+      margin-left: 10px
+      position: relative
+      z-index: 2
+      @include before_circle
+   &__link-btn
+      width: 150px
+      transition: 0.5s all
+      &:hover
+         transform: scale(1.2)
+
+   &__link-btn2
+      width: 200px
+      transition: 0.5s all
+      &:hover
+         transform: scale(1.2)
+         background-color: $main-color

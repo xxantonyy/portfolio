@@ -1,0 +1,65 @@
+.about
+   .container  
+      padding-top: 120px
+      padding-right: 100px
+      display: grid
+      grid-template-columns: 400px 570px
+      grid-template-rows: repeat(2,minmax(300px,auto))
+      column-gap: 70px 
+   &_header
+      position: relative
+      z-index: 2
+      @include before_circle
+      font-weight: 700
+      font-size: 16px
+      line-height: 24px
+      margin-bottom: 6px
+      opacity: 0
+   #img
+      width: 100%
+      height: 600px
+      grid-row-start: 1
+      grid-row-end: 3
+      object-fit: cover
+   &__working
+      display: grid
+      grid-template-rows: repeat(2,minmax(100px, auto)   )
+      grid-template-columns: repeat(2,1fr)
+      column-gap: 50px
+      row-gap: 20px
+   &__working_block
+      display: flex
+      position: relative
+      @include before_circle2
+      span
+         font-weight: 700
+         font-size: 14px
+         line-height: 21px
+      img
+         position: relative
+         width: 25px
+         height: 25px
+         left: -13px 
+         top: 25px 
+   &_h2
+      font-weight: 700
+      font-size: 36px
+      line-height: 60px
+      opacity: 0
+   &__descr
+      font-weight: 500
+      font-size: 14px
+      line-height: 21px
+   &__working_descr
+      font-weight: 500
+      font-size: 12px
+      line-height: 18px
+   &__info
+      padding-bottom: 30px
+   .devider
+      margin: 0 100% 25px 0
+      height: 2px
+      width: 70px
+      background-color:$main-color
+   .about__working_descr2
+      margin-left: 10px

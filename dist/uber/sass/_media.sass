@@ -1,0 +1,225 @@
+@media (max-width: 1200px)
+   .menu
+      &_item
+         padding-right: 20px
+      &_link
+         font-size: 13px
+   .promo
+      &_header
+         font-size: 50px
+   .perspectives
+      .col-6
+         align-items: flex-start
+   .footer
+      .cercl_container
+         left: 10px
+         bottom: 10px
+      &_img
+         right: 20px
+         a
+            img
+               position: absolute
+               right: 10px
+               bottom: 10px
+               width: 200px
+   
+@media (max-width: 991px)
+   .menu
+      &_item
+         padding-right: 10px
+         padding-left: 5px
+      &_link
+         font-size: 10px
+   .subheader
+      &_phone
+         font-size: 18px
+      &_official
+         font-size: 12px
+      img
+         width: 100%
+      &_btn
+         height: 35px
+   .promo
+      &_header
+         font-size: 40px
+      &_subheader 
+         font-size: 20px
+      &_descr
+         font-size: 14px
+      &_btn
+         font-size: 16px
+         font-weight: 400
+         line-height: 36px
+   .perspectives
+      .container
+         height: 1400px
+      .col-md-6
+         flex-direction: column
+         align-items: center
+      .img
+         margin-bottom:10px
+         text-align: center
+         margin-left: 50%
+         transform: translateX(-50%)
+   .mobile
+      min-height: 1000px
+      .topick_mobile
+         margin: 71px auto
+      .row
+         flex-direction: column
+         margin-left: 50%
+         transform: translateX(-50%)
+      .mobile_item_subtitle
+         margin: 0 auto
+         right:70%
+         transform: translateY(-50%)
+      .container
+         margin: 0 auto
+   .footer_img
+         right: 5%
+         bottom: 10px
+@media (max-width: 767px)
+   .subheader_phone
+      font-size: 14px
+   .menu
+      position: fixed
+      flex-direction: column 
+      top: 0
+      left: -100%
+      width: 50%
+      height: 100vh
+      padding: 20px 15px
+      background-color: rgba(0,0,0, .8)
+      justify-content: center
+      align-items: center
+      transition: 0.6s all
+      &_active
+         left: 0
+      &_item
+         padding-right: 0
+         border: none
+         margin: 10px 0
+      &_link
+         font-size: 20px
+   .hamburger
+      display: block
+      position: absolute
+      right: 10px
+      top: 50%
+      transform: translateY(-50%)
+      width: 26px
+      span
+         display: block
+         height: 2px
+         width: 100%
+         background-color: #fff
+         margin-bottom: 2px
+         transition: 0.6s all
+      &_active
+         span
+            margin-bottom: -2px 
+            &:nth-child(1)
+               transform: rotate(-45deg)
+            &:nth-child(2)
+               display: none
+            &:nth-child(3)
+               transform: rotate(45deg)
+   .promo
+      .col-10
+         margin: 0 auto
+   .perspectives
+      min-height: 2800px
+      .col-md-6
+         display: block
+         .img
+            margin-bottom: 20px
+            margin-left: 50%
+            transform: translateX(-50%) 
+         .perspectives_description
+            margin: 0 auto
+   .mobile
+      .row
+         flex-direction: column
+         margin-left: 60%
+         transform: translateX(-103%)
+      .container
+         margin: 0 auto
+         .col-md-4
+            margin-bottom: 10px
+   .footer
+      .cercl_container
+         left:5px
+         bottom: 5px
+      .footer_img
+         right: 5px
+         bottom: 5px
+   .choose
+      .label
+         font-size:30px
+
+@media (max-width: 575px)
+   .navbar
+      width: 100%
+   .subheader
+      &_official
+         display: none
+      &_logo
+         margin-top: 27px
+      &_call
+         display: none
+      &_btn
+         margin-top: 28px
+         height: 22px
+         width: 110px
+         font-size: 10px
+      &_phone
+         margin-top: 32px
+         font-size: 7px
+      .col-3 
+         display: flex
+         flex-direction: column
+      .col-4
+         display: flex
+         flex-direction: column
+      .row
+         height: 40px
+   .promo
+      &_descr
+         display: none
+   .perspectives
+      .kol6
+         margin-top: 100px
+      .perspectives_description
+         width: 100%
+      .label
+         font-size: 30px
+   .mobile
+      .sub_label
+         padding-top: 50px
+      .row
+         padding-right: 40px
+      .mobile_item_subtitle
+         margin: 0 68px
+      .col-md-4
+         margin: 0 -67px
+   .require
+      &_list
+         padding-left: 18px
+   .choose
+      .label
+         margin-bottom: 50px
+   .menu_active
+      opacity: 0.9
+      font-size: 16px
+      text-align: center   
+   .footer
+      .cercl_container
+         display: none
+      &_img
+         display: none
+      .referenc
+         display: none
+      .col
+         display: flex
+         justify-content: center
+         flex-wrap: wrap

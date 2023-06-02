@@ -1,0 +1,101 @@
+.skills
+   padding-top: 126px
+   &__header
+      position: relative
+      text-align: center
+
+      @include before_circle2
+      &::before
+         left: 50%
+         transform: translateX(-50%)
+         top: -5px
+   &__subtitle
+      text-align: center
+   &__descr
+      font-weight: 500
+      font-size: 12px
+      line-height: 18px
+      width: 211px
+      height: 94px
+      margin-top: 20px
+   &__img-name
+      display: flex
+      margin-top: 15px
+   &__wrapper
+      display: grid
+      grid-template-rows: repeat(1, minmax(270px,auto))
+      grid-template-columns: repeat(4, 270px)
+      grid-auto-rows: 240px
+      gap: 13px
+      justify-content: center
+      &-item
+         border: 1px solid black
+         padding: 30px 30px 30px 25px
+   &__nub-descr
+      margin: 60px auto 
+      text-align: center
+      background-color: $main-color
+      width: 300px
+      border-radius: 6px
+      font-weight: 700
+      font-size: 16px
+      line-height: 21px
+   &__wrapper-skil
+      margin-top: 120px
+      display: flex
+      justify-content: space-between
+.twice
+   .skills__img
+      margin-top: 15px
+   .skills__img-name
+      margin-top: 30px
+.skills .devider
+   margin: 30px auto 30px auto
+   height: 2px
+   width: 70px
+   background-color: $main-color
+
+.skills__skills__img-name  
+   display: grid
+   justify-content: center
+   grid-template-columns: repeat(3, 350px)
+   grid-template-rows: repeat(2,70px)
+   column-gap: 45px
+   row-gap: 30px
+ 
+   .skills__item
+      position: relative
+      .header
+         position: absolute
+         top: 8px
+         left: 14px
+         font-weight: 700
+         font-size: 14px
+         line-height: 21px
+      @include before_circle2
+      &:before
+         left: 5px
+         top: 0
+      .percent
+         position: absolute
+         top: 8px
+         right: 0
+         transition: 5s all
+      .sshkala
+         width: 100%
+         height: 14px
+         background-color: grey
+         position: absolute
+         bottom: 0
+         border-radius: 4px   
+      .sshkala__loading
+         position: absolute
+         bottom: 0
+         border-radius: 4px   
+         content: ''
+         background-color: $main-color
+         width: 0%
+         height: 14px
+         transition: 0.2s all
+   
+            

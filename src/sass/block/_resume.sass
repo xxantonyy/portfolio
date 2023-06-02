@@ -1,0 +1,99 @@
+.resume
+   padding-top: 120px
+
+   &__title
+      position: relative
+      text-align: center
+      @include before_circle
+      &:before
+         top: -6px
+         left: 50%
+         transform: translateX(-50%)
+         
+   &__subtitle
+      text-align: center
+      
+   &__wrapper
+      display: grid
+      grid-template-columns: repeat(2, 425px)
+      padding:60px 65px 0 65px 
+      column-gap: 135px
+      ul
+         margin: 0
+         padding: 0
+         list-style-type: none
+         li
+            position: relative
+            &:after
+               content: ''
+               width: 1px
+               height: 100%
+               position: absolute
+               top: -8px
+               left: 0
+               background-color: black
+   &__item
+      position: relative
+      &:before
+         content: ''
+         height: 1px
+         width: 38px
+         position: absolute
+         background-color: black
+         top: 53px
+      &-head
+         padding-left: 100px
+         padding-top: 30px
+      
+      &-body
+         padding-top: 12px
+         padding-left: 40px
+         font-weight: 500
+         font-size: 12px
+         line-height: 18px
+
+   &__item_location
+      font-weight: 500
+      font-size: 14px
+      line-height: 21px
+      position: relative
+   &__item_icon
+      position: absolute
+      top: 50px
+      left: 55px
+      @include before_circle2
+      &::before
+         left: -17px
+         top: -15px
+         
+   &__underitle
+      font-weight: 700
+      font-size: 20px
+      line-height: 30px
+      position: relative
+      padding-left: 35px
+      margin: 0
+      &:before
+         content: ''
+         position: absolute
+         height: 15px
+         width: 15px
+         background-color: $main-color
+         border-radius: 100%
+         left: -7px
+         top: 50%
+         transform: translateY(-50%)
+
+   
+
+
+
+
+
+
+.resume .devider
+   background-color: $main-color
+   margin: 25px auto 0 auto
+   height: 2px
+   width: 70px
+   

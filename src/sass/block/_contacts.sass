@@ -1,0 +1,96 @@
+.contacts
+   padding: 120px 0 91px 0
+   &__wrapper
+      display: grid
+      padding: 0 35px 0 52px
+      grid-template-columns: 400px 585px
+      justify-content: space-between
+   &__photo
+      img
+         height: 100%
+         width: 100%
+         object-fit: cover
+   &__header
+      position: relative
+      z-index: 2
+      @include before_circle
+      text-align: left
+      margin-left: 5px
+   &__subtitle
+      text-align: left
+   &__text
+      font-weight: 700
+      font-size: 14px
+      line-height: 21px
+      margin-top: 20px
+   &__link
+      img
+         height: 30px
+         width: 30px
+         text-decoration: none
+   &__social
+      margin-top: 20px
+      .contacts__link
+         margin-right: 25px
+   &__form
+      margin-top: 30px
+      display: grid
+      grid-template-columns: repeat(2, 280px)
+      grid-template-rows: 45px 190px 45px
+      justify-content: space-between
+      row-gap: 30px
+   &__input
+      position: relative
+      input
+         width: 100%
+         height: 45px
+         padding: 0 20px
+         font-size: 12px
+      label
+         position: absolute
+         top: -10px
+         left: 20px
+         background-color: white
+         height: 18px
+         padding: 0 8px
+   &__textarea
+      position: relative
+      grid-column: 1/3
+      textarea
+         width: 100%
+         height: 190px
+         resize: none
+         padding: 20px
+         font-size: 12px
+      label
+         position: absolute
+         top: -10px
+         left: 20px
+         background-color: white
+         height: 18px
+         padding: 0 8px
+   &__triggers
+      grid-column: 1/3
+      display: grid
+      grid-template-columns: repeat(2, auto)
+      column-gap: 35px
+   &__policy
+      font-size: 12px
+      line-height: 14px
+      display: flex
+      align-items: center
+      input
+         margin-right: 10px
+
+      
+
+.contacts .devider
+   margin: 4px auto 20px 0
+
+.btn  
+   width: 219px
+   padding: 10px 20px
+   border: none
+   font-weight: 700
+   font-size: 14px
+   line-height: 21px

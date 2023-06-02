@@ -1,0 +1,44 @@
+.revivers
+   min-height: 790px
+   &__wrapper
+      margin-top: 70px
+      hr
+         border-bottom: none
+         height: 1px
+         background-color: #f6f6f6
+   &__item
+      margin-top: 53px 
+      margin-bottom:  50px
+      display: -webkit-box
+      justify-content: space-between
+      position: relative
+      left: -100%
+      opacity: 0
+      transition: 1.5s all
+   &-show  
+      left: 0
+      opacity: 1
+      &:last-child
+         margin-top: 48px
+         margin-bottom: 0
+      img
+         width: 169px
+         height: 169px
+   &__undertitle
+      margin-top: 10px
+      color: #646464
+      font-size: 14px
+      font-weight: 300
+   &__description
+      margin-top: 19px
+      color: #0d0d0d
+      font-size: 16px
+      font-weight: 300
+      width: 656px
+
+   &__subtitle
+      color: #0d0d0d
+      font-size: 18px
+      font-weight: 700
+   &__content
+      margin-left: 62px
